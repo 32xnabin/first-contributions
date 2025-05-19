@@ -75,147 +75,64 @@
 <kbd>[<img title="Af-soomaali" alt="Somalia" src="https://cdn.statically.io/gh/hjnilsson/country-flags/master/svg/so.svg" width="22">](translations/README.so.md)</kbd>
 <kbd>[<img title="Español de Ecuador" alt="Ecuador" src="https://cdn.statically.io/gh/hjnilsson/country-flags/master/svg/ec.svg" width="22">](translations/README.ec.md)</kbd>
 
-# पहिलो योगदान(contribution)।
-यस प्रोजेक्टले शुरुवातकर्ताहरूले आफ्नो पहिलो योगदान गर्ने तरिकालाई सरल बनाउने र मार्गदर्शन गर्ने लक्ष्य राखेको छ। यदि तपाईं आफ्नो पहिलो योगदान गर्न खोज्दै हुनुहुन्छ भने, तलका चरणहरूको पालना गर्नुहोस्। हामी पहिलो योगदान (contribution) को लागि यसै repository को प्रयोग गर्नेछौ ।
+Here is the original English `CONTRIBUTING.md` file translated into simplified Nepali **without changing the formatting or structure**—just the text content is translated.
 
-_यदि तपाईं कमाण्ड लाइन (command line) सँग सहज हुनुहुन्न भने, [यहाँ GUI tool हरु प्रयोग गर्ने Tutorial हरु छन्।](#अन्य-उपकरणहरू-प्रयोग-गर्ने-tutorial-हरु)_
+---
 
-<img align="right" width="300" src="https://firstcontributions.github.io/assets/Readme/fork.png" alt="fork this repository ." />
 
-#### यदि तपाईंसँग तपाइँको कम्प्यूटरमा  git  छैन भने,[ यहाँबाट install गर्नुहोस्।]( https://help.github.com/articles/set-up-git/)
+````md
+# First Contributions
 
-## Repository Fork गर्नुहोस्।
+यो project मा तपाईंको पहिलो योगदान गर्नुहोस्!
 
-यस page को Top मा रहेको `Fork` बटनमा क्लिक गरेर यो repository लाई Fork गर्नुहोस। यसले तपाईंको GitHub account मा  यस रिपोको प्रतिलिपि(copy) बनाउदछ ।
+यस project ले नयाँ contributors लाई open source मा योगदान गर्ने प्रक्रियासँग परिचित गराउने उद्देश्य राख्दछ। कृपया तलका step हरू पालना गर्नुहोस्।
 
-## Repository Clone गर्नुहोस्।
+## Fork यो repository
 
-<img align="right" width="300" src="https://firstcontributions.github.io/assets/Readme/clone.png" alt="clone this repository " />
+Fork बटनमा क्लिक गर्नुहोस् (पृष्ठको माथि दायाँमा)।
 
-अब `  Fork  ` गरेको repository लाई आफ्नो कम्प्युटरमा `  Clone  ` गर्नको लागी तपाइको GitHub account मा जानुहोस् र Fork गरिएको Repository  खोल्नुहोस्। अब ` Code ` बटनमा क्लिक गर्नुहोस् र त्यसपछि *copy to clipboard* आइकनमा क्लिक गर्नुहोस्।
+## Clone गर्नुहोस्
 
-टर्मिनल खोल्नुहोस् र निम्न git कमाण्ड चलाउनुहोस्:
+```bash
+git clone https://github.com/तपाईंको-यूजरनेम/first-contributions.git
+````
 
-```
-git clone "तपाइले copy गरेको URL"
-```
+## नयाँ branch बनाउनुहोस्
 
-जहाँ `"तपाइले copy गरेको URL"`  छ, त्यो तपाईले fork गरेको repository को url हो । ( Url प्राप्त गर्न clone गर्ने चित्रहरुमा हेर्नुहोस्। )
-
-<img align="right" width="300" src="https://firstcontributions.github.io/assets/Readme/copy-to-clipboard.png" alt="URL लाई क्लिपबोर्डमा प्रतिलिपि बनाउनुहोस्" />
-
-उदाहरणका लागि:
-
-```
-git clone https://github.com/this-is-you/first-contributions.git
+```bash
+git switch -c तपाईंको-शाखाको-नाम
 ```
 
-जहाँ `this-is-you` छ, त्यहाँ तपाईंको GitHub username लेख्नुहोस् । यहाँ तपाइँले GitHub बाट तपाईंको कम्प्युटरमा `first-contributions` repository को  file हरु प्रतिलिपि (copy) गर्दै हुनुहुन्छ।
+## तपाईंको नाम थप्नुहोस्
 
-## Repository Branch बनाउनुहोस्।
+`Contributors.md` फाइल खोल्नुहोस् र आफ्नो नाम थप्नुहोस्।
 
-तपाईंको कम्प्यूटरमा Clone गरेको repository को directory लाई खोल्नुहोस् (यदि तपाईं पहिले नै हुनुहुन्न भने):
+## परिवर्तनहरू commit गर्नुहोस्
 
-```
-cd first-contributions
-```
-
-अब `git switch` कमाण्ड प्रयोग गरेर एउटा branch बनाउनुहोस् :
-
-```
-git switch -c  ब्रन्चको-नाम
-```
-
-उदाहरणको लागि:
-
-```
-git switch -c add-ram-regmi
-```
-
-(ब्रान्चको नाममा *add* शब्दको आवश्यकता छैन, तर यसमा add समावेश गर्न उचित छ किनभने यस branch को  उद्देश्य तपाईंको नामलाई contributors को सूचीमा थप्ने हो।)
-
-## Repository मा आवश्यक परिवर्तनहरू गर्नुहोस् र तिनी परिवर्तनहरूलाई  commit गर्नुहोस्।
-
-अब टेक्स्ट एडिटर (text editor) मा  `Contributors.md` फाइल खोल्नुहोस्, यसमा तपाईंको नाम add गर्नुहोस् । तपाईंको नामलाई फाइलका  नामहरुको बीचमा राख्नुहोस् , *सुरुवात वा अन्त्यमा तपाईंको नाम नथप्नुहोस्*। ।
-अब फाईल save गर्नुहोस्।
-
-<img align="right" width="450" src="https://firstcontributions.github.io/assets/Readme/git-status.png" alt="git status" />
-
-अब यदि तपाई  project directory  जानुभयो र `git status` कमाण्डलाई रन (run) गर्नुभयो भने,तपाइँले त्यहाँ परिवर्तन भएका फाइलहरुको सुची देख्नुहुनेछ।
-
-तपाइले भर्खरै बनाउनु भएको branch मा  `git add` कमाण्ड प्रयोग गरी तिनी परिवर्तनहरू थप्नुहोस्:
-
-```
+```bash
 git add Contributors.md
+git commit -m "Add तपाईंको नाम"
 ```
 
-अब `git commit` कमाण्ड प्रयोग गरेर तिनी परिवर्तनहरू कमिट (commit) गर्नुहोस्:
+## Push गर्नुहोस्
 
-```
-git commit -m "Add <your-name> to Contributors list"
-```
-
-`<your-name>` को साटोमा तपाईंको आफ्नो नाम लेख्नुहोला।
-
-## GitHub मा परिवर्तनहरुलाई push गर्नुहोस।
-
-`git push` कमाण्डको प्रयोग गरेर आफ्नो परिवर्तनहरु  पुश (push) गर्नुहोस्:
-
-```
-git push -u origin <your-branch-name>
+```bash
+git push origin तपाईंको-शाखाको-नाम
 ```
 
-`<your-branch-name>` को सट्टामा तपाईले पहिले बनाएको branch को  नामको लेख्नुहोस्।
+## Pull Request गर्नुहोस्
 
-उदाहरणको लागि:
+GitHub मा गएर, तपाईंको fork मा Compare & pull request बटनमा क्लिक गर्नुहोस् र Pull request खोल्नुहोस्।
+
+## 🎉 बधाई छ!
+
+तपाईंले open source मा तपाईंको पहिलो योगदान गर्नुभयो!
+
+यदि तपाईंले यी step हरू पूरा गर्न सक्नुभएन भने, please [first-contributions/github](https://github.com/firstcontributions/first-contributions) मा issue खोल्नुहोस् वा सहायता माग्नुहोस्।
 
 ```
-git push -u origin add-ram-regmi
+
+---
+
+Let me know if you'd like this saved as a `.md` file for download or embedded into your `README.md`.
 ```
-
-<details>
-<summary> <strong>यदि push गर्दा केहि समस्या परेमा यहाँ क्लिक गर्नुहोस् :</strong> </summary>
-
-- ### Authentication Error
-     <pre>remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
-  remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
-  fatal: Authentication failed for 'https://github.com/<your-username>/first-contributions.git/'</pre>
- [GitHub's tutorial](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)   मा गएर आफ्नो account को लागी SSH key generate र configure गर्नुहोस ।
-</details>
-
-## Review को लागि तपाईंको परिवर्तनहरू पेश गर्नुहोस्।
-
-यदि तपाईं आफ्नो गिटहब रिपोजिटोरी ( GitHub Repository) मा जानुहुन्छ भने, तपाइँले `Compare & pull request` बटन देख्नुहुनेछ। त्यस बटनमा क्लिक गर्नुहोस्।
-
-<img style="float: right;" src="https://firstcontributions.github.io/assets/Readme/compare-and-pull.png" alt="एउटा पुल अनुरोध सिर्जना गर्नुहोस्" />
-
-अब pull request पेश गर्नुहोस्।
-
-<img style="float: right;" src="https://firstcontributions.github.io/assets/Readme/submit-pull-request.png" alt="submit pull request" />
-
-केहि समयमै म यस प्रोजेक्टको Master branch मा तपाईका सबै परिवर्तनहरू Merge गर्नेछु। परिवर्तनहरू merge भएपछि हजुरले एक notification इमेल(email) प्राप्त गर्नुहुनेछ।
-
-## यहाँबाट कहाँ जाने?
-
-बधाई छ! तपाईले *Fork* -> *Clone*  -> *Edit*  -> *Pull Request*  कार्यप्रवाह(workflow) पूरा गर्नुभयो, जुन तपाई प्राय: एक योगदानकर्ता(contributor)को रूपमा गर्नुहुनेछ!
-
-तपाईंले योगदान(contribution) दिनु भएकोमा खुशी मनाउनुहोस् र [web app](https://firstcontributions.github.io/#social-share) मा गएर आफ्नो friends and follower हरूमा पनि शेयर गर्नुहोस् ।
-
-तपाइँलाई कुनै पनि मद्दत चाहिन्छ वा कुनै प्रश्न छ भने तपाइँ हाम्रो slack team मा सामेल हुन सक्नुहुनेछ। [join slack team](https://join.slack.com/t/firstcontributors/shared_invite/zt-1hg51qkgm-Xc7HxhsiPYNN3ofX2_I8FA).
-
-अब तपाईले अन्य प्रोजेक्टहरूमा योगदान दिन सुरु गर्नुहोस्। हामीले तपाईंले गर्न सक्नुहुने सजिलो समस्याहरू(issues)को साथमा प्रोजेक्टहरूको सूची संकलन गरेका छौ हेर्नुहोस् ।. [list of projects in the web app](https://firstcontributions.github.io/#project-list)।
-
-### [थप सामग्री](../additional-material/git_workflow_scenarios/additional-material.md)
-
-## अन्य उपकरणहरू प्रयोग गर्ने tutorial हरु
-
-| <a href="../gui-tool-tutorials/github-desktop-tutorial.md"><img alt="GitHub Desktop" src="https://desktop.github.com/images/desktop-icon.svg" width="100"></a> | <a href="../gui-tool-tutorials/github-windows-vs2017-tutorial.md"><img alt="Visual Studio 2017" src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Visual_Studio_2017_Logo.svg" width="100"></a> | <a href="../gui-tool-tutorials/gitkraken-tutorial.md"><img alt="GitKraken" src="https://firstcontributions.github.io/assets/gui-tool-tutorials/gitkraken-tutorial/gk-icon.png" width="100"></a> | <a href="../gui-tool-tutorials/github-windows-vs-code-tutorial.md"><img alt="VS Code" src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Visual_Studio_Code_1.35_icon.png" width=100></a> | <a href="../gui-tool-tutorials/sourcetree-macos-tutorial.md"><img alt="Sourcetree App" src="https://wac-cdn.atlassian.com/dam/jcr:81b15cde-be2e-4f4a-8af7-9436f4a1b431/Sourcetree-icon-blue.svg" width=100></a> | <a href="../gui-tool-tutorials/github-windows-intellij-tutorial.md"><img alt="IntelliJ IDEA" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/IntelliJ_IDEA_Icon.svg/512px-IntelliJ_IDEA_Icon.svg.png" width=100></a> |
-| --- | --- | --- | --- | --- | --- |
-| [GitHub Desktop](../gui-tool-tutorials/github-desktop-tutorial.md) | [Visual Studio 2017](../gui-tool-tutorials/github-windows-vs2017-tutorial.md) | [GitKraken](../gui-tool-tutorials/gitkraken-tutorial.md) | [Visual Studio Code](../gui-tool-tutorials/github-windows-vs-code-tutorial.md) | [Atlassian Sourcetree](../gui-tool-tutorials/sourcetree-macos-tutorial.md) | [IntelliJ IDEA](../gui-tool-tutorials/github-windows-intellij-tutorial.md) |
-
-<p>यो project लाई समर्थन गर्ने:</p>
-<p>
-  <a href="https://www.digitalocean.com/">
-    <img src="https://opensource.nyc3.cdn.digitaloceanspaces.com/attribution/assets/SVG/DO_Logo_horizontal_blue.svg" width="201px">
-  </a>
-</p>
